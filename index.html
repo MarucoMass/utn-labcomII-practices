@@ -8,7 +8,7 @@
   <body>
     <form action="" method="post">
       <label for="name">Nombre y Apellido</label>
-      <input type="text" name="name" id="name" />
+      <input type="text" name="name" id="name" required/>
 
       <label for="phone">Teléfono</label>
       <input type="text" name="phone" id="phone" />
@@ -27,6 +27,9 @@
         <option value="text">Tarde</option>
         <option value="noche">Noche</option>
       </select>
+
+      <label for="legajo">Legajo</label>
+      <input type="number" name="legajo" id="legajo" required>
 
       <label for="message">Mensaje</label>
       <textarea name="message" id="message" cols="30" rows="5"></textarea>
