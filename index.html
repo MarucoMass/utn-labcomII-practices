@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="" method="post">
-          <label for="name">Nombre y Apellido</label>
-          <input type="text" name="name" id="name"/>
+      <label for="name">Nombre y Apellido</label>
+      <input type="text" name="name" id="name" />
 
-          <label for="phone">Teléfono</label>
-          <input type="text" name="phone" id="phone" />
+      <label for="phone">Teléfono</label>
+      <input type="text" name="phone" id="phone" />
 
-          <label for="mail">Mail</label>
-          <input type="email" name="mail" id="mail" placeholder="tuemail@mail.com" />
+      <label for="mail">Mail</label>
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        placeholder="tuemail@mail.com"
+      />
 
-          <label for="message">Mensaje</label>
-          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+      <label for="turno">Turno</label>
+      <select name="turno" id="turno">
+        <option value="mañana">Mañana</option>
+        <option value="text">Tarde</option>
+        <option value="noche">Noche</option>
+      </select>
 
-        <input type="submit" value="Enviar" />
-      </form>
-</body>
+      <label for="message">Mensaje</label>
+      <textarea name="message" id="message" cols="30" rows="5"></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
 </html>
