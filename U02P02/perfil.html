@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+  </head>
+  <body>
+    <h1>Mi perfil</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <input type="text" name="name" id="name" value="ESTUDIANTE" readonly />
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="Nombre completo"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Correo electrónico"
+        />
+        <input type="number" name="edad" id="edad" placeholder="Edad" />
+        <select name="nacionalidad" id="nacionalidad">
+          <option value="Nacionalidad" disabled selected>Nacionalidad</option>
+          <option value="Argentino">Argentino</option>
+          <option value="Boliviano">Boliviano</option>
+          <option value="Paraguayo">Paraguayo</option>
+        </select>
+        <select name="laboral" id="laboral">
+          <option value="condicion" disabled selected>Condición laboral</option>
+          <option value="Desempleado">Desempleado</option>
+          <option value="En búsqueda laboral">En búsqueda laboral</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Full-time">Full-time</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Gustos personales</legend>
+        <input
+          type="text"
+          name="gustos-musicales"
+          id="gustos-musicales"
+          placeholder="Gustos musicales favoritos"
+        />
+        <select name="comidas" id="comidas">
+          <option value="favoritas" disabled selected>Comidas favoritas</option>
+          <option value="Milanesas">Milanesas</option>
+          <option value="Tallarines">Tallarines</option>
+          <option value="Pastel de papa">Pastel de papa</option>
+        </select>
+
+        <input type="submit" value="Enviar" />
+
+        <label for="recordar">Recordar mis datos</label>
+        <input type="checkbox" name="recordar" id="recordar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
