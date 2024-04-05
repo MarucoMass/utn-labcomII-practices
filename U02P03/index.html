@@ -4,119 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Práctica 3</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #aaaaaa;
-      }
-      div.container {
-        overflow: auto;
-      }
-      header {
-        background-color: #e5e5e5;
-        padding: 15px;
-        text-align: center;
-      }
-      nav {
-        float: left;
-        width: 20%;
-        text-align: center;
-      }
-      nav ul {
-        padding-left: 0px;
-      }
-      nav li {
-        list-style: none;
-      }
-      nav li a {
-        background-color: #e5e5e5;
-        padding: 8px;
-        margin-top: 7px;
-        display: block;
-        width: 100%;
-        color: black;
-        font-weight: 700;
-      }
-      main {
-        float: left;
-        width: 60%;
-        padding: 0 20px;
-      }
-      .right {
-        background-color: #e5e5e5;
-        float: left;
-        width: 20%;
-        padding: 15px;
-        margin-top: 7px;
-        text-align: center;
-      }
-      footer {
-        background-color: #e5e5e5;
-        text-align: center;
-        padding: 10px;
-        margin-top: 7px;
-      }
-      /* For mobile phones: */
-      @media only screen and (max-width: 620px) {
-        nav,
-        main,
-        .right {
-          width: 100%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <!-- Encabezado -->
     <header>
-      <h1>Hola mundo!</h1>
+      <h1>Pelispedia</h1>
     </header>
     <div class="container">
       <!-- Navegación / cotenedor izquierdo -->
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Multimedia</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
       <!-- Contenedor principal -->
       <main>
-        #3 - Definir la estructura básica de nuestra página Nuestra página
-        estará compuesta por un encabezado - “header”, un contenedor principal
-        que estará dividido en 3 secciones (navegación - “nav”, contenedor
-        principal - “main” y contenedor secundario “div.right”). Por último
-        mostraremos un pie de página - “footer”. Esta estructura básica es la
-        que deberán tener las 3 páginas que implementaremos en nuestro sitio
-        web, tanto el header como el nav y el footer deberán ser prácticamente
-        iguales, lo que variará es el propio contenido que se encuentra dentro
-        del elemento “main”. Este es el código html a colocar dentro del
-        elemento “body”: Una vez incorporado el código html en tu index.html,
-        tomate unos minutos para analizarlo y compararlo con lo que renderiza el
-        navegador. TIP: Siempre que copies y pegues código de otra fuente, luego
-        de hacerlo presiona “alt” + “shift” + “F” lo que hará que tu código se
-        indente correctamente.
         <section>
-          <h2>Lorum Ipsum</h2>
+          <h2>Películas Recomendadas</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat.
+            Descubre las mejores películas seleccionadas especialmente para ti.
+            Sumérgete en una experiencia cinematográfica inolvidable con nuestra
+            colección de películas recomendadas.
           </p>
+          <a href="#"
+            ><img
+              src="img/joven-manos.jpg"
+              alt="Banner de Joven Manos de Tijera"
+              width="200"
+          /></a>
+          <a href="#"
+            ><img
+              src="img/gladiador.jpg"
+              alt="Banner de Gladiador"
+              width="200"
+          /></a>
+          <a href="#"
+            ><img
+              src="img/kill-bill.jpeg"
+              alt="Banner de Kill Bill"
+              width="200"
+          /></a>
+        </section>
+
+        <section>
+          <h2>Categorías</h2>
+          <p>Elige el género de película que más te apasione.</p>
+          <ul>
+            <li><a href="#">Drama</a></li>
+            <li><a href="#">Comedia</a></li>
+            <li><a href="#">Ciencia Ficción</a></li>
+            <li><a href="#">Policial</a></li>
+            <li><a href="#">Romántica</a></li>
+            <li><a href="#">Terror</a></li>
+          </ul>
         </section>
       </main>
       <!-- Contenedor secundario / derecho -->
       <div class="right">
-        <h2>Info</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <h2>Estrenos</h2>
+        <p>Estas son las películas esta semana. <a href="#">Hechar un vistazo</a></p>
       </div>
     </div>
     <!-- Pie de Página-->
     <footer>
-      <p>© copyright labcomII.com</p>
+      <p>© Pelispedia. Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
