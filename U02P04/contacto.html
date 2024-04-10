@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 3</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1>Pelispedia</h1>
+    </header>
+    <div class="container">
+      <!-- Navegación / cotenedor izquierdo -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Contenedor principal -->
+      <main>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>
+              ¡Contáctate con nosotros!😀
+            </legend>
+
+            <table>
+              <tr>
+                <td>🤓 <label for="nombre">Nombre:</label></td>
+                <td>
+                  <input type="text" id="nombre" name="nombre" required />
+                </td>
+              </tr>
+              <tr>
+                <td>📫 <label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required /></td>
+              </tr>
+              <tr>
+                <td>📆 <label for="edad">Edad:</label></td>
+                <td><input type="number" id="edad" name="edad" /></td>
+              </tr>
+              <tr>
+                <td>🤨 <label for="color">Color preferido:</label></td>
+                <td><input type="color" id="color" name="color" /></td>
+              </tr>
+              <tr>
+                <td>✍ <label for="comentario">Comentario:</label></td>
+                <td>
+                  <textarea
+                    id="comentario"
+                    name="comentario"
+                    rows="4"
+                    minlength="10"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <br />
+            <input type="submit" value="Enviar" />
+          </fieldset>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13395.47950879854!2d-60.6678003!3d-32.928036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x115bfacfd7b5d275!2sShowcase%20Cinemas%20Rosario!5e0!3m2!1ses!2sar!4v1712711765214!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </main>
+      <!-- Contenedor secundario / derecho -->
+      <div class="right">
+        <h2>Estrenos</h2>
+        <p>
+          Estas son las películas esta semana. <a href="#">Hechar un vistazo</a>
+        </p>
+      </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+      <p>© Pelispedia. Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
