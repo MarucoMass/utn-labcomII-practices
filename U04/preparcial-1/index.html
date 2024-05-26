@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="product-image"></div>
+      <div class="product-details">
+        <div class="product-details-content">
+          <h2>Celulares</h2>
+          <form action="">
+            <div class="form-control">
+              <label>Color</label>
+              <select id="color-producto">
+                <option disabled selected value="0">
+                  -- Seleccione una opción --
+                </option>
+                <option value="grafito">Grafito</option>
+                <option value="sierra">Sierra</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label>Capacidad</label>
+              <select id="productos">
+                <option disabled selected value="0">
+                  -- Seleccione una opción --
+                </option>
+                <option value="150000">128 GB</option>
+                <option value="165000">256 GB</option>
+                <option value="180000">512 GB</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="cantidad">Cantidad</label>
+              <input id="cantidad" type="number" min="0" max="10" />
+            </div>
+            <div class="form-control">
+              <button type="button" onclick="calculatePrice()">Cotizar</button>
+            </div>
+            <div id="result" class="form-control">
+              Resultado cotización o error
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
