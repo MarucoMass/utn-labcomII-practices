@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="div_container">
+        <form action="">
+            <div class="div_inputs">
+                Tipo de usuario:
+                <br>
+                <label for="iva21">Residencial</label>
+                <br>
+                <input type="radio" id="iva21" name="iva" value="21">
+                <br>
+                <label for="iva27">Industrial</label>
+                <br>
+                <input type="radio" id="iva21" name="iva" value="27">
+            </div>
+            <div class="div_inputs">
+                <label for="zona">Zona del domicilio: </label>
+                <br>
+                <select name="zona" id="zona">
+                    <option value="" selected disabled>Seleccione una opcion</option>
+                    <option value="5.80">Distrito Centro</option>
+                    <option value="5.40">Distrito Zur</option>
+                    <option value="5.35">Distrito Oeste</option>
+                    <option value="5.60">Distrito Este</option>
+                </select>
+            </div>
+            <div class="div_inputs">
+                <label for="kWh">Cantidad de kWh del mes: </label>
+                <br>
+                <input type="number" id="cantidad" name="kWh">
+            </div>
+            
+            <button type="button" onclick="calcular()">Calcular</button>
+            
+            
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

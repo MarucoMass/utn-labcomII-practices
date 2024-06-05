@@ -1,0 +1,20 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vmin;
+}
+
+.div_container{
+    background-color: rgb(255, 217, 0);
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_inputs{
+    padding: 16px;
+}

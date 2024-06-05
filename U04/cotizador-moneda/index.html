@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotizador de monedas</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="">
+        <label for="pesos">Pesos:</label>
+        <input type="number" name="pesos" id="pesos" min="1" max="5000000"/>
+
+        <label for="moneda-ext">Moneda extranjera:</label>
+        <select name="moneda-ext" id="moneda-ext">
+          <option value="" disabled selected>Elija su moneda</option>
+          <option value="dolar">Dolar</option>
+          <option value="euro">Euro</option>
+        </select>
+
+        <button type="button" onclick="cotizar()">Cotizar</button>
+        <div id="result" class="result-box none"></div>
+      </form>
+
+      <form action="" id="form-nuevaMoneda">
+        <label for="moneda-nueva">Moneda nueva:</label>
+        <input type="text" name="moneda-nueva" id="moneda-nueva" />
+
+        <label for="costo-conv">Costo de conversión:</label>
+        <input type="number" name="costo-conv" id="costo-conv" min="1"/>
+
+        <button type="button" onclick="ingresarMoneda()">Ingresar</button>
+        <div id="result2" class="result-box none"></div>
+      </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
